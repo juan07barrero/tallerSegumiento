@@ -17,6 +17,7 @@ public class Biblioteca implements Prestamo {
     private Collection<Libro> LibrosDisponibles;
     private ArrayList<PrestamoLibro> librosPrestados;
     private ArrayList<PrestamoLibro> librosDevueltos;
+    private Empleado empleado;
 
     private ArrayList<Cliente> clientes;
 
@@ -36,11 +37,16 @@ public class Biblioteca implements Prestamo {
         return clientes;
     }
 
+    public Empleado getEmpleado() {
+        return empleado;
+    }
+
     public Biblioteca() {
         LibrosDisponibles = new ArrayList<>();
         librosPrestados = new ArrayList<>();
         librosDevueltos = new ArrayList<>();
         clientes = new ArrayList<>();
+        this.empleado = empleado;
 
     }
 
